@@ -10,10 +10,11 @@ type ClothesCardProps = {
   title: string;
   subtitle: string;
   imageUrl: string;
-  price: number;
-  originalPrice?: number;
+  price: number | string;
+  originalPrice?: number | string;
   showOptions?: boolean;
   link: string;
+  viewOrBuy: string;
 };
 
 const ClothesCard = ({
@@ -24,6 +25,7 @@ const ClothesCard = ({
   originalPrice,
   showOptions = true,
   link,
+  viewOrBuy
 }: ClothesCardProps) => {
   const sizes = ["L", "S", "XS"];
   const colors = ["Floral", "Beige", "Black"];
@@ -50,16 +52,16 @@ const ClothesCard = ({
         <div className="flex justify-between items-center mb-5">
           <h2>{subtitle}</h2>
           <Link href={link}>
-            <Button variant="ecommerce">SEE ALL</Button>
+            <Button variant="ecommerce">{viewOrBuy}</Button>
           </Link>
         </div>
         <hr className="border-black" />
         <div className="mt-10">
           <h2 className="md:text-lg lg:text-xl font-semibold mb-2">{title}</h2>
           <div className="flex items-center gap-2">
-            <h2 className="md:text-lg lg:text-4xl font-semibold">${price}</h2>
+            <h2 className="md:text-lg lg:text-4xl font-semibold">£{price}</h2>
             {originalPrice && (
-              <h3 className="line-through">${originalPrice}</h3>
+              <h3 className="line-through">£{originalPrice}</h3>
             )}
           </div>
 

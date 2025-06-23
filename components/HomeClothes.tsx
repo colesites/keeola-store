@@ -14,6 +14,7 @@ const HomeClothes = () => {
         originalPrice={169}
         showOptions={true}
         link="/fresh-arrivals"
+        viewOrBuy="SEE ALL"
       />
       <ClothesCard
         title="Blue Dress"
@@ -23,6 +24,7 @@ const HomeClothes = () => {
         originalPrice={99}
         showOptions={true}
         link="/preloved-styles"
+        viewOrBuy="SEE ALL"
       />
     </div>
   );

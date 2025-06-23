@@ -35,4 +35,22 @@ export const crochets = [
       discount: "$100.00",
       category: "Crochets",
   },
+  {
+    id: 5,
+    title: "Black and Blue Crochet Hat",
+    image:
+      "/crochets/black-blue-crochet-hats-2.jpg",
+      price: "$130.00",
+      discount: "$100.00",
+      category: "Crochets",
+  },
+  {
+    id: 6,
+    title: "Black Crochet Bag",
+    image:
+      "/crochets/black-crochet-bag.jpg",
+      price: "$130.00",
+      discount: "$100.00",
+      category: "Crochets",
+  },
 ];
