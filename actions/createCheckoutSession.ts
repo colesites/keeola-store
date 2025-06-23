@@ -20,10 +20,10 @@ export async function createCheckoutSession(
   items: GroupedBasketItem[],
   metadata: Metadata
 ) {
-  const baseUrl =
-    process.env.NEXT_PUBLIC_BASE_URL || // ✅ for local dev
-    (process.env.VERCEL_URL && `https://${process.env.VERCEL_URL}`) || // ✅ for deployed prod
-    "http://localhost:3000";
+  const isProduction = process.env.NODE_ENV === "production";
+  const baseUrl = isProduction
+    ? (process.env.VERCEL_URL && `https://${process.env.VERCEL_URL}`)
+    : process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
   const successUrl = `${baseUrl}/dashboard/success?session_id={CHECKOUT_SESSION_ID}&orderNumber=${metadata.orderNumber}`;
   const cancelUrl = `${baseUrl}/dashboard/basket`;
 
