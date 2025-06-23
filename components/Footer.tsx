@@ -55,17 +55,17 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/crochet" className="hover:underline">
+              <Link href="/dashboard/categories/crochets" className="hover:underline">
                 Crochet
               </Link>
             </li>
             <li>
-              <Link href="/fresh-arrivals" className="hover:underline">
+              <Link href="/dashboard/categories/fresharrivals" className="hover:underline">
                 Fresh Arrivals
               </Link>
             </li>
             <li>
-              <Link href="/preloved-styles" className="hover:underline">
+              <Link href="/dashboard/categories/prelovedstyles" className="hover:underline">
                 Preloved Styles
               </Link>
             </li>

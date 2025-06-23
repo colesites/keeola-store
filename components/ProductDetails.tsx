@@ -52,9 +52,9 @@ export default function ProductDetails({ product }: { product: Product }) {
           </div>
           <div className="mt-6">
             <AddToBasketButton product={product} disabled={isOutOfStock} />
-            <Button className="bg-amber-950 hover:bg-amber-900">
+            {/* <Button className="bg-amber-950 hover:bg-amber-900">
               Add to basket
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

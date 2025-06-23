@@ -13,7 +13,7 @@ const HomeClothes = () => {
         price={149}
         originalPrice={169}
         showOptions={true}
-        link="/fresh-arrivals"
+        link="/dashboard/categories/fresharrivals"
         viewOrBuy="SEE ALL"
       />
       <ClothesCard

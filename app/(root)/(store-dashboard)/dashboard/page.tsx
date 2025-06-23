@@ -10,7 +10,9 @@ export default async function Dashboard() {
   const products = await getAllProducts();
   const categories = await getAllCategories();
 
-  return <div className="p-4">
-    <ProductsView products={products} categories={categories} />
-  </div>;
+  return (
+    <div className="p-4">
+      <ProductsView products={products} categories={categories} />
+    </div>
+  );
 }

@@ -44,7 +44,7 @@ const ReviewCard = ({
 const CustomersFeedback = () => {
   return (
     <div className="mt-20 flex flex-col justify-center items-center">
-      <h2 className="text-4xl mb-8 font-bold">WHAT OUR CUSTOMERS SAID</h2>
+      <h2 className="text-4xl text-center mb-8 font-bold">WHAT OUR CUSTOMERS SAID</h2>
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (

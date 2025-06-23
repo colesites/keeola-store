@@ -29,9 +29,10 @@ export default function NavBar() {
                 </Button>
               </Link>
             ) : (
-              <Button className="bg-amber-950 hover:bg-amber-900">
-                <SignInButton mode="modal" className="cursor-pointer" />
-              </Button>
+              <SignInButton
+                mode="modal"
+                className="cursor-pointer bg-amber-950 hover:bg-amber-900 h-9 px-4 py-2 has-[>svg]:px-3 flex items-center justify-center text-white rounded-md"
+              />
             )}
           </ClerkLoaded>
         </div>

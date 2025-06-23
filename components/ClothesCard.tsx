@@ -67,14 +67,14 @@ const ClothesCard = ({
 
           {showOptions && (
             <>
-              <div className="flex items-center mt-5 space-x-1 text-yellow-700">
+              <div className="flex items-center mt-5 mb-10 space-x-1 text-yellow-700">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} size={16} fill="currentColor" />
                 ))}
                 <span className="text-sm text-gray-600 ml-2">(12)</span>
               </div>
 
-              <div className="mt-6">
+              {/* <div className="mt-6">
                 <h3 className="font-semibold mb-1">Size</h3>
                 <div className="flex space-x-2">
                   {sizes.map((size) => (
@@ -91,9 +91,9 @@ const ClothesCard = ({
                     </button>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
-              <div className="mt-6">
+              {/* <div className="mt-6">
                 <h3 className="font-semibold mb-1">Color</h3>
                 <div className="flex space-x-2">
                   {colors.map((color) => (
@@ -110,9 +110,9 @@ const ClothesCard = ({
                     </button>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
-              <div className="mt-6 mb-10 flex items-center space-x-4">
+              {/* <div className="mt-6 mb-10 flex items-center space-x-4">
                 <button
                   className="px-3 py-1 border rounded hover:bg-gray-100"
                   onClick={decrement}
@@ -126,7 +126,7 @@ const ClothesCard = ({
                 >
                   +
                 </button>
-              </div>
+              </div> */}
               <hr className="border-black" />
               <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-sm text-black">
                 <div className="flex items-center gap-2">
@@ -143,10 +143,10 @@ const ClothesCard = ({
                 </div>
               </div>
 
-              <div className="flex justify-center items-center gap-4 mt-6">
+              {/* <div className="flex justify-center items-center gap-4 mt-6">
                 <Button className="rounded-none bg-black hover:bg-black/80" size="lg">ADD TO CHART</Button>
                 <Button className="rounded-none bg-transparent border border-black text-black hover:bg-transparent hover:border-amber-950 hover:text-amber-950" size="lg">BUY NOW</Button>
-              </div>
+              </div> */}
             </>
           )}
         </div>

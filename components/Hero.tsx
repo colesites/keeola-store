@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -26,9 +27,11 @@ const Hero = () => {
           with modern materials.
         </p>
         <div className="mt-6 flex">
-          <button className="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition">
-            SHOP NOW
-          </button>
+          <Link href="/dashboard">
+            <button className="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-100 cursor-pointer transition">
+              SHOP NOW
+            </button>
+          </Link>
         </div>
       </div>
     </div>

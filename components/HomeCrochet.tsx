@@ -26,7 +26,7 @@ const HomeCrochet = () => {
         </div>
 
         <div className="mt-8">
-          <Link href="/crochet">
+          <Link href="/dashboard/categories/crochets">
             <Button variant="ecommerce">See All Products</Button>
           </Link>
         </div>

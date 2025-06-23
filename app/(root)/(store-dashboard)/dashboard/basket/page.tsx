@@ -6,7 +6,7 @@ import Loader from "@/components/Loader";
 import { Button } from "@/components/ui/button";
 import { imageUrl } from "@/lib/imageUrl";
 import useBasketStore from "@/store/store";
-import { SignedIn, useAuth, useUser } from "@clerk/nextjs";
+import { SignedIn, SignInButton, useAuth, useUser } from "@clerk/nextjs";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -148,6 +148,16 @@ function page() {
             >
               {isLoading ? "Processing..." : "Checkout"}
             </Button>
+          )}
+
+          {!isSignedIn && (
+            <>
+              <SignInButton
+                mode="modal"
+                className="cursor-pointer bg-amber-950 hover:bg-amber-900 h-9 px-4 py-2 has-[>svg]:px-3 flex items-center justify-center text-white rounded-md"
+              />
+              <p>Sign in to checkout</p>
+            </>
           )}
         </div>
 
