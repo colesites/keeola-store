@@ -3,7 +3,7 @@ import { faqs } from "@/data/faqs"
 
 export default function FAQ() {
   return (
-    <section className="max-w-3xl mx-auto px-4 py-16">
+    <section id="faq" className="max-w-3xl mx-auto px-4 py-16">
       <h2 className="text-4xl font-serif text-center mb-10">FAQ</h2>
       <Accordion type="single" collapsible className="space-y-2">
         {faqs.map((faq, index) => (

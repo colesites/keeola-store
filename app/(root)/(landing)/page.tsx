@@ -11,7 +11,7 @@ const page = () => {
       <Hero />
       <HomeCrochet />
       <HomeClothes />
-      <CustomersFeedback />
+      {/* <CustomersFeedback /> */}
       <FAQ />
       <Features />
     </section>
