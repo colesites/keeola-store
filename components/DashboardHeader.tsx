@@ -32,7 +32,7 @@ const DashboardHeader = () => {
           <SheetContent side="left">
             <SheetHeader className="pt-20 text-lg">
               <SheetTitle hidden>Menu</SheetTitle>
-              <Link href="/" className="mb-5">
+              <Link href="/dashboard" className="mb-5">
                 <Image
                   src="/keeola-logo.png"
                   alt="keeola logo"
