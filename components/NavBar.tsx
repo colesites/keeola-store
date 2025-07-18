@@ -11,7 +11,6 @@ import Form from "next/form.js";
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -156,9 +155,7 @@ export default function NavBar() {
           <ClerkLoaded>
             {user ? (
               <Link href="/dashboard">
-                <Button className="bg-amber-950 hover:bg-amber-900">
-                  Go to dashboard
-                </Button>
+                <User />
               </Link>
             ) : (
               <SignInButton
