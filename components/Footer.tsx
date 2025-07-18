@@ -92,10 +92,10 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className="text-md font-medium tracking-wider mb-4">
+          <h3 className="text-md font-medium max-md:text-center tracking-wider mb-4">
             Subscribe to our emails
           </h3>
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col gap-y-10 md:flex-row justify-between items-center">
             <div className="space-y-4">
               <div className="relative space-y-3">
                 <Input
